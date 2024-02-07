@@ -22,7 +22,7 @@ deployment = client.V1Deployment(
         containers=[
           client.V1Container(
             name="cloud-native-monitoring-container",
-            image="316878774218.dkr.ecr.us-east-1.amazonaws.com/cloud-native-monitoring",
+            image="316878774218.dkr.ecr.us-east-1.amazonaws.com/cloud-native-monitoring:latest",
             ports=[client.V1ContainerPort(container_port=5000)]
           )
         ]
